@@ -42,9 +42,19 @@ a {
   position: relative;
   overflow: hidden;
   color: var(--white);
-  background:
+  background-color: var(--blue-2);
+  background-image:
     linear-gradient(105deg, rgba(3, 48, 152, 0.98), rgba(6, 30, 90, 0.9) 54%, rgba(64, 145, 113, 0.82)),
-    url("../img/bg5.png") center / cover;
+    url("../img/bg5.png");
+  background-image:
+    linear-gradient(105deg, rgba(3, 48, 152, 0.98), rgba(6, 30, 90, 0.9) 54%, rgba(64, 145, 113, 0.82)),
+    image-set(
+      url("../img/bg5.webp") type("image/webp"),
+      url("../img/bg5.jpg") type("image/jpeg"),
+      url("../img/bg5.png") type("image/png")
+    );
+  background-position: center, center;
+  background-size: cover, cover;
   animation: heroBgDrift 18s ease-in-out infinite alternate;
 }
 
