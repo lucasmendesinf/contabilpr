@@ -353,6 +353,7 @@ h1 {
   position: relative;
   min-height: 470px;
   isolation: isolate;
+  transform: translateY(-34px);
 }
 
 .hero-visual::before,
@@ -1231,7 +1232,8 @@ h1 {
     min-height: 390px;
     max-width: 560px;
     width: 100%;
-    margin: 0 auto;
+    margin: -20px auto 0;
+    transform: none;
   }
 
   .main-flow-card {
@@ -1305,6 +1307,7 @@ h1 {
 
   .hero-visual {
     min-height: 360px;
+    margin-top: 0;
   }
 
   .flow-orbit {
