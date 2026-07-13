@@ -206,11 +206,14 @@ h1 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  align-items: center;
+  gap: 14px;
 }
 
 .hero-actions .btn {
+  flex: 0 0 auto;
   min-width: 164px;
+  white-space: nowrap;
 }
 
 .hero-trust {
@@ -1267,8 +1270,16 @@ h1 {
     padding-top: 122px;
   }
 
+  .hero-actions {
+    gap: 10px;
+  }
+
   .hero-actions .btn {
-    width: 100%;
+    flex: 1 1 150px;
+    min-width: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    white-space: normal;
   }
 
   .hero-trust {
